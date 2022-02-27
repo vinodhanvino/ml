@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  height: 70px;  
+ background-color: #353474;
+ 
+ }
+.header h1{
+  
+  color: aliceblue;
+  text-decoration: underline;
+  font-size: 30px;
+
+}
+.header h1 small{
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+}
+.crop_field h1{
+    text-align:center;
+    font-size: 60px;
+    text-decoration: underline;
+  }
+.crop_field h1 small{
+  font-size: 20px;
+  text-decoration: none;
+}
+.inputs{
+  text-align: center;
+  margin: 30px;
+}
+
+#soils{
+  margin: 10px;
+  font-size: 20px;
+}
+#month{
+  margin: 10px;
+}#state{
+  margin: 10px;
+}#land_type{
+  margin: 10px;
+}#Temperature{
+  margin: 10px;
+}#Rainfall{
+  margin: 10px;
+}
+#Phosphorus{
+  margin: 10px;
+  }
+#Nitrogen{
+  margin: 10px;
+}
+#Water{
+  margin: 10px;
+}
+.buttons{
+  text-align: center;
+}
+
+
+.showPredict h1{
+  font-size: 60px;
+  text-align: center;
+}

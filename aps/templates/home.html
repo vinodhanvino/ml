@@ -1,0 +1,118 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static '/css/main.css'%}"><link>
+<script src="{% static '/css/sr.js' %}"></script>
+  
+</script> 
+</head>
+<body>
+    <div class="header">
+            <h1>Reva University <small>Bengaluru Karnarta</small></h1>
+        
+  </div>
+
+      <div class="crop_field">
+        <pre>
+          <h1>Crop Yield Prediction
+<small> Agricultural Crop Recommendations based on Productivity and Seasone<small></h1> 
+        </pre>
+      </div>
+
+          <div class="inputs">
+            
+          <label for="soil">Choose soil:</label>
+          <select id="soil" name="soils">
+            <option value="#">Select</option>
+            <option value="0">Alluvial</option>
+            <option value="5">Red</option>
+            <option value="1">Black</option>
+            <option value="4">Mountain</option>
+            <option value="3">Laterite</option>
+            <option value="2">Desert</option>
+          </select>
+
+          <label for="month">Choose month:</label>
+          <select id="month" name="months">
+            <option value="#">Select</option>
+            <option value="4">January</option>
+            <option value="3">February</option>
+            <option value="7">March</option>
+            <option value="0">April</option>
+            <option value="8">May</option>
+            <option value="6">June</option>
+            <option value="5">July</option>
+            <option value="1">August</option>
+            <option value="11">September</option>
+            <option value="10">October</option>
+            <option value="9">November</option>
+            <option value="2">December</option>
+          </select>
+          <label for="state">Choose state:</label>
+          <select id="state" name="cars">
+            <option value="#">Select</option>
+            <option value="1">Andhra Pradesh and Telangana</option>
+            <option value="2">Assam</option>
+            <option value="3">Bihar</option>
+            <option value="4">Gujarat</option>
+            <option value="5">Haryana</option>
+            <option value="6">Himachal Pradesh</option>
+            <option value="7">Karnataka</option>
+            <option value="8">Kerala</option>
+            <option value="9">Madhya Pradesh</option>
+            <option value="10">Maharashtra</option>
+            <option value="11">Odisha</option>
+            <option value="12">Punjab</option>
+            <option value="13">Tamil Nadu</option>
+            <option value="14">Uttar Pradesh</option>
+            <option value="15">West Bengal</option>
+            <option value="16">Chhattisgarh</option>
+            <option value="17">Jharkhand</option>
+            <option value="18">Uttrakhand</option>
+          </select>
+          <label for="land_type">Choose Land type:</label>
+          <select id="land_type" name="land_type">
+            <option value="#">Select</option>
+            <option value="Alkaline soils">Alkaline soils</option>
+            <option value="Sandy Soil">Sandy Soil</option>
+            <option value="Clay Soil">Clay Soil</option>
+            <option value="Silt Soil">Silt Soil</option>
+            <option value="Alluvial soils">Alluvial soils</option>
+            <option value="Black soils">Black soils</option>
+            <option value="Red soils">Red soils</option>
+            <option value="Laterite soils">Laterite soils</option>
+            <option value="Desert soils">Desert soils</option>
+            <option value="Mountain soils">Mountain soils</option>
+            <option value="Saline soils">Saline soils</option>
+            <option value="Peaty soils">Peaty soils</option>
+            <option value="Marshy soils">Marshy soils</option>
+          </select>
+
+          <label for="Temperature">Temperature</label>
+          <input type="text" id="Temperature" name="Temperature"> 
+          <br><br>
+          <label for="Rainfall">Rainfall</label>
+          <input type="text" id="Rainfall" name="Rainfall"> 
+          
+          <label for="Phosphorus">Phosphorus</label>
+          <input type="text" id="Phosphorus" name="Phosphorus"> 
+          
+          <label for="Nitrogen">Nitrogen</label>
+          <input type="text" id="Nitrogen" name="Nitrogen"> 
+
+          <label for="Water">Water</label>
+          <input type="text" id="Water" name="Water"> 
+          
+        </div>
+        
+<div class="buttons">        
+  
+<button type="button" onclick="check()">Get Results</button>
+</div>
+
+<div class="showPredict">
+  <h1 id = "showPredictword">Results:</h1>
+</div>
+</body>
+
+</html>
